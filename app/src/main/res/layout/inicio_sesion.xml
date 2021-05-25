@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#464545">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="STFast"></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:theme="@style/AppTheme"
+                app:startIconTint="#FFFFFF"
+                app:endIconMode="custom"
+                app:counterEnabled="true"
+                app:startIconDrawable="@drawable/alien_outline"
+                app:counterTextColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Usuario">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userTextLogin"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:theme="@style/AppTheme"
+                app:startIconDrawable="@drawable/key"
+                app:startIconTint="#FFFFFF"
+                android:textColorHint="@color/colorAccent"
+                android:layout_width="250dp"
+                app:counterEnabled="true"
+                app:counterTextColor="@color/colorAccent"
+                app:endIconTint="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                app:endIconMode="password_toggle"
+                android:layout_gravity="center">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contraseñaTextLogin"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/errorCrendencialesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#F85353"
+                android:layout_gravity="left">
+            </TextView>
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/iniciarSesion_Button"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:text="Inciar Sesión"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
