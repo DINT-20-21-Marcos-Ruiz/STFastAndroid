@@ -1,38 +1,19 @@
 package com.example.stfastdesktop.POJO;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
-import java.util.Date;
-
 public class Jugador {
-    @SerializedName("id_jugador")
-    @Expose
     Integer id_jugador;
-    @SerializedName("imgPerfil")
-    @Expose
     String imgPerfil;
-    @SerializedName("equipo")
-    @Expose
     Integer equipo;
-    @SerializedName("apodo")
-    @Expose
     String apodo;
-    @SerializedName("passwd")
-    @Expose
     String passwd;
-    @SerializedName("sexo")
-    @Expose
     String sexo;
-    @SerializedName("fechaCreacion")
-    @Expose
-    Date fechaCreacion;
+    String fechaCreacion;
 
     public Jugador(){
 
     }
 
-    public Jugador(Integer id_jugador, String imgPerfil, Integer equipo, String apodo, String passwd, String sexo, Date fechaCreacion) {
+    public Jugador(Integer id_jugador, String imgPerfil, Integer equipo, String apodo, String passwd, String sexo, String fechaCreacion) {
         this.id_jugador = id_jugador;
         this.imgPerfil = imgPerfil;
         this.equipo = equipo;
@@ -90,11 +71,11 @@ public class Jugador {
         this.sexo = sexo;
     }
 
-    public Date getFechaCreacion() {
+    public String getFechaCreacion() {
         return fechaCreacion;
     }
 
-    public void setFechaCreacion(Date fechaCreacion) {
+    public void setFechaCreacion(String fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
     }
 }

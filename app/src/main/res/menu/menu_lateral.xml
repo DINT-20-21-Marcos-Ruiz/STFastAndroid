@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Familia"
+        android:id="@+id/familia"
+        android:icon="@android:drawable/btn_star_big_on" />
+    <item android:title="Trabajo"
+        android:id="@+id/trabajo"
+        android:icon="@android:drawable/ic_menu_upload_you_tube" />
+    <item android:title="Amigos"
+        android:id="@+id/amigos"
+        android:icon="@android:drawable/presence_online" />
+    <item android:title="Todos"
+        android:id="@+id/todos"
+        android:icon="@android:drawable/ic_menu_week" />
+</menu>

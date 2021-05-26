@@ -21,13 +21,14 @@
 
 
 
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/añadirContacto_fab"
+        android:id="@+id/añadirAmistoso_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:src="@drawable/add"
-        app:backgroundTint="#EA7676"
+        app:backgroundTint="#DF8484"
         app:layout_anchor="@id/layout"
         app:layout_anchorGravity="bottom|right" />
 

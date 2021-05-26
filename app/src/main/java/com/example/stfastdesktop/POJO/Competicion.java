@@ -1,44 +1,24 @@
 package com.example.stfastdesktop.POJO;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
-import java.util.Date;
-
 public class Competicion {
-    @SerializedName("id_competicion")
-    @Expose
     Integer id_competicion;
-    @SerializedName("cnombre")
-    @Expose
+    String tipo;
     String cnombre;
-    @SerializedName("capacidad")
-    @Expose
     Integer capacidad;
-    @SerializedName("fecha")
-    @Expose
-    Date fecha;
-    @SerializedName("premio")
-    @Expose
+    String fecha;
     String premio;
 
     public Competicion(){
 
     }
 
-    public Competicion(Integer id_competicion, String cnombre, Integer capacidad, Date fecha, String premio) {
+    public Competicion(Integer id_competicion, String tipo, String cnombre, Integer capacidad, String fecha, String premio) {
         this.id_competicion = id_competicion;
+        this.tipo = tipo;
         this.cnombre = cnombre;
         this.capacidad = capacidad;
         this.fecha = fecha;
         this.premio = premio;
-    }
-
-    public Competicion(Integer id_competicion, String cnombre, Date fecha) {
-        this.id_competicion = id_competicion;
-        this.cnombre = cnombre;
-        this.capacidad = 2;
-        this.fecha = fecha;
     }
 
     public Integer getId_competicion() {
@@ -47,6 +27,14 @@ public class Competicion {
 
     public void setId_competicion(Integer id_competicion) {
         this.id_competicion = id_competicion;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getCnombre() {
@@ -65,11 +53,11 @@ public class Competicion {
         this.capacidad = capacidad;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 

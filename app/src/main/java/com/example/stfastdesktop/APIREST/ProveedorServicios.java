@@ -25,7 +25,7 @@ public interface ProveedorServicios {
 
     @GET("juego/{id_juego}")
     @Headers({"Accept: application/json","Content-Type: application/json"})
-    Call<List<Juego>> getJuego(@Path("id_juego") Integer id_juego);
+    Call<Juego> getJuego(@Path("id_juego") Integer id_juego);
 
     @POST("juego")
     @Headers({"Accept: application/json","Content-Type: application/json"})

@@ -1,17 +1,8 @@
 package com.example.stfastdesktop.POJO;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class Inscripcion {
-    @SerializedName("id_inscripcion")
-    @Expose
     Integer id_inscripcion;
-    @SerializedName("equipo_id")
-    @Expose
     Integer equipo_id;
-    @SerializedName("compet_id")
-    @Expose
     Integer compet_id;
 
     public Inscripcion(){

@@ -1,23 +1,10 @@
 package com.example.stfastdesktop.POJO;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class Equipo {
-    @SerializedName("id_equipo")
-    @Expose
     Integer id_equipo;
-    @SerializedName("juego")
-    @Expose
     Integer juego;
-    @SerializedName("enombre")
-    @Expose
     String enombre;
-    @SerializedName("logo")
-    @Expose
     String logo;
-    @SerializedName("abreviacion")
-    @Expose
     String abreviacion;
 
     public Equipo(){
